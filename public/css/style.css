@@ -1,0 +1,312 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary:#F8BBD0;
+    --secondary:#E1BEE7;
+    --mint:#D8F3DC;
+    --sky:#D6F0FF;
+    --cream:#FFFDFB;
+    --dark:#4B5563;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--cream);
+    color:var(--dark);
+}
+
+a{
+    text-decoration:none;
+}
+
+.navbar{
+    background:white;
+    padding:16px 0;
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:700;
+    color:#F48FB1 !important;
+}
+
+.nav-link{
+    margin-left:15px;
+    font-weight:500;
+    color:#555 !important;
+}
+
+.nav-link:hover{
+    color:#F48FB1 !important;
+}
+
+.btn-primary{
+    background:#F8BBD0;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#F48FB1;
+}
+
+section{
+    padding:80px 0;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay{
+    background: rgba(255,255,255,0.12);
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.hero .container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero-badge{
+    background: rgba(255,255,255,.75);
+    backdrop-filter: blur(8px);
+    color:#6B7280;
+    padding:10px 22px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero-title{
+    font-size:58px;
+    font-weight:700;
+    line-height:1.15;
+}
+
+.hero-title span{
+    color:#F48FB1;
+}
+
+.hero-text{
+    max-width:480px;
+    font-size:18px;
+    line-height:1.9;
+    color:#5B6472;
+}
+
+.hero-btn{
+    background:#F8AFCB;
+    color:white;
+    padding:14px 38px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 10px 20px rgba(248,175,203,.35);
+}
+
+.hero-btn:hover{
+    background:#F58CB8;
+    transform:translateY(-3px);
+}
+
+.hero-content{
+    min-height:80vh;
+    align-items:center;
+}
+
+/* ===== Featured Apps ===== */
+
+.featured{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+    color:#374151;
+}
+
+.section-subtitle{
+    color:#6B7280;
+    margin-top:10px;
+}
+
+.app-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.app-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.app-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.app-card h4{
+    font-weight:700;
+}
+
+/* ===== Applications ===== */
+
+.apps-header{
+    padding:100px 0 70px;
+    background:linear-gradient(180deg,#FDFBFF,#EEF7FF);
+}
+
+.apps-header h1{
+    font-size:52px;
+    font-weight:700;
+    color:#374151;
+}
+
+.apps-header p{
+    max-width:650px;
+    margin:20px auto 0;
+    color:#6B7280;
+    line-height:1.8;
+}
+
+/* LOGIN */
+
+.login-card{
+    background:#fff;
+    border-radius:24px;
+    padding:40px;
+    border:1px solid #E8E8E8;
+}
+
+.login-card h2{
+    color:#404A63;
+    font-weight:700;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:12px 15px;
+}
+
+.form-control:focus{
+    border-color:#F4A9C4;
+    box-shadow:0 0 0 .2rem rgba(244,169,196,.25);
+}
+
+.demo-account{
+    background:#EAF6FF;
+    border:1px solid #CBE8FF;
+    color:#42526E;
+    border-radius:14px;
+    padding:15px;
+    font-size:.95rem;
+}
+
+.demo-account strong{
+    color:#F38FB6;
+}
+
+/* DASHBOARD */
+
+.dashboard-card{
+    background:#fff;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border:1px solid #eee;
+}
+
+.dashboard-card h5{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.dashboard-card h1{
+    font-size:60px;
+    color:#F38FB6;
+    font-weight:700;
+}
+
+/* ===========================
+   ADMIN LAYOUT
+=========================== */
+
+.admin-body{
+    background:#F9FAFC;
+}
+
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#fff;
+    padding:30px;
+    border-right:1px solid #ececec;
+    position:fixed;
+}
+
+.logo{
+    color:#F38FB6;
+    font-weight:700;
+}
+
+.sidebar-link{
+    display:block;
+    text-decoration:none;
+    color:#42526E;
+    padding:12px 15px;
+    margin-bottom:8px;
+    border-radius:12px;
+    transition:.25s;
+    font-weight:600;
+}
+
+.sidebar-link:hover{
+    background:#FCE7F1;
+    color:#F38FB6;
+}
+
+.logout-btn{
+    width:100%;
+    border:none;
+    background:#F38FB6;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.logout-btn:hover{
+    background:#ec7cab;
+}
+
+.admin-content{
+    margin-left:250px;
+    width:100%;
+    padding:40px;
+}
+
+.alert{
+    border:none;
+    border-radius:14px;
+}
